@@ -13,6 +13,6 @@
 # limitations under the License.
 
 FROM golang:1.10.0
-RUN go get github.com/codegangsta/negroni 
-RUN go get github.com/gorilla/mux 
+RUN go get github.com/codegangsta/negroni n/
+RUN go get github.com/gorilla/mux n/
 RUN go get github.com/xyproto/simpleredis

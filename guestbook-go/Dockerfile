@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM golang
+FROM golang:1.10.0
 RUN go install github.com/codegangsta/negroni \
            github.com/gorilla/mux \
            github.com/xyproto/simpleredis

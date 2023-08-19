@@ -14,7 +14,7 @@
 
 FROM golang:1.10.0
 WORKDIR /app
-ADD ./main.go .
+ADD ./guestbook-go/main.go .
 RUN CGO_ENABLED=0 GOOS=linux go build -o main .
 
 FROM scratch

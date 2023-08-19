@@ -20,8 +20,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o main .
 FROM scratch
 WORKDIR /app
 COPY --from=0 /app/main .
-COPY ./public/index.html public/index.html
-COPY ./public/script.js public/script.js
+COPY ./guestbook-go/public/index.html public/index.html
+COPY ./guestbook-go/public/script.js public/script.js
 CMD ["/app/main"]
 EXPOSE 3000
 
